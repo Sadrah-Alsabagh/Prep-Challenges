@@ -1,6 +1,6 @@
 "use strict";
 
-//const { number } = require("yargs");
+const { number } = require("yargs");
 
 // --------------------------------------------------------------------------------------------------------
 //  Challenge 01:
@@ -32,7 +32,7 @@ const findMax = (arr) => {
 //  Write a function that takes an arrays and returns the Sum of the numeric values
 //  inside the array (there could be strings inside), without using built-in functions
 //
- let arr = [20, '234', 'car', 41, 20, 'chair']
+//Input: [20, '234', 'car', 41, 20, 'chair']
 // Output: 81
 const sumNums = (arr) => {
   let sum =0;
@@ -42,8 +42,8 @@ const sumNums = (arr) => {
     if(typeof arr[i] === 'number' ){
     sum += arr[i]}
   }
- // return sum;
- console.log(sum);
-};sumNums(arr)
+  return sum;
+
+};
 // -------------------------------------------------------------------------------------------------------
-//module.exports = { findMax, sumNums };
+module.exports = { findMax, sumNums };
